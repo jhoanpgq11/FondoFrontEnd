@@ -1,0 +1,24 @@
+<h2>Subscribe to a Fund</h2>
+
+<div *ngIf="client">
+  <p>Client: {{ client.name }}</p>
+  <p>Balance: {{ client.balance | currency:'COP':'symbol' }}</p>
+</div>
+
+<div>
+  <label for="fund">Select Fund:</label>
+  <select [(ngModel)]="selectedFundId">
+    <option *ngFor="let fund of funds" [value]="fund.id">
+      {{ fund.name }} (Min: {{ fund.minimumAmount | currency:'COP':'symbol' }})
+    </option>
+  </select>
+</div>
+
+<div>
+  <label for="amount">Amount:</label>
+  <input type="number" [(ngModel)]="amount">
+</div>
+
+<button (click)="subscribe()">Subscribe</button>
+
+<p class="message">{{ message }}</p>

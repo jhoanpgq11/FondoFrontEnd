@@ -1,0 +1,14 @@
+<h2>Unsubscribe from a Fund</h2>
+
+<div>
+  <label for="fund">Subscribed Fund:</label>
+  <select [(ngModel)]="selectedFundId">
+    <option *ngFor="let fund of subscribedFunds" [value]="fund.fundId">
+      {{ fund.fundName }} - Amount: {{ fund.amount | currency:'COP':'symbol' }}
+    </option>
+  </select>
+</div>
+
+<button (click)="unsubscribe()">Unsubscribe</button>
+
+<p class="message">{{ message }}</p>

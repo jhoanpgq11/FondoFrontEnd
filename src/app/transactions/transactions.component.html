@@ -1,0 +1,23 @@
+<h2>Transaction History</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Transaction ID</th>
+      <th>Fund ID</th>
+      <th>Client ID</th>
+      <th>Amount</th>
+      <th>Date</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let transaction of transactions">
+      <td>{{ transaction.id }}</td>
+      <td>{{ transaction.fundId }}</td>
+      <td>{{ transaction.clientId }}</td>
+      <td>{{ transaction.amount }}</td>
+      <td>{{ transaction.date }}</td>
+      <td>{{ transaction.type }}</td>
+    </tr>
+  </tbody>
+</table>

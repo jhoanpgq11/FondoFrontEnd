@@ -1,0 +1,55 @@
+
+h2 {
+    font-size: 26px;
+    color: #34495E;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2980B9;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #BDC3C7;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background-color: #ECF0F1;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #3498DB;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #2980B9;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #27AE60; 
+    text-align: center;
+    margin-top: 20px;
+  }
+  

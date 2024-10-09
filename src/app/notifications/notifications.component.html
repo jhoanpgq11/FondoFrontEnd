@@ -1,0 +1,10 @@
+<h2>Send Notification</h2>
+<div>
+  <label for="type">Notification Type:</label>
+  <select [(ngModel)]="type">
+    <option value="email">Email</option>
+    <option value="sms">SMS</option>
+  </select>
+</div>
+<button (click)="sendNotification()">Send Notification</button>
+<p>{{ message }}</p>
